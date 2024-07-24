@@ -22,4 +22,4 @@ This project is a simple implementation of the classic Tic Tac Toe game using HT
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mohdasif871999/tic-tac-toe.git
+   git clone https://github.com/mohdasif871999/Tic-Tac-Toe
