@@ -41,6 +41,7 @@ const disBoxes = ()=> {
 }
 
 const checkWinner = () => {
+    let isDraw = true;
     for(let pattern of winPatterns){
     let pos1 = boxes[pattern[0]].innerText;
     let pos2 = boxes[pattern[1]].innerText;
@@ -54,6 +55,17 @@ const checkWinner = () => {
         }
       }
     }
+        //draw condition
+    for(let box of boxes){
+        if(box.innerText==""){
+             isDraw=false;
+             break;
+        }
+    }
+        if(isDraw){
+            msg.innerText = "It was a Draw";
+            msgCont.classList.remove("hide");
+        }
 };
 
 boxes.forEach((box)=>{
